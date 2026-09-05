@@ -291,12 +291,53 @@
             .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; background: var(--light); order: 4; }
             .mobile-menu-actions .btn { width: 100%; justify-content: center; padding: 0.9rem 1.3rem; }
             
-            .hero { padding: 6rem 1.5rem; min-height: 80vh; }
-            /* TITULO HERO AJUSTADO */
-            .hero-content h1 { font-size: clamp(2rem, 7vw, 2.5rem); margin-bottom: 1rem; }
-            .hero-content p { font-size: clamp(1rem, 4vw, 1.15rem); margin-bottom: 2rem; }
-            .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
-            .hero-buttons .btn { width: 100%; font-size: 16px; justify-content: center; text-align: center; display: flex; }
+            /* HERO OPTIMIZADO PARA MOVIL */
+            .hero { 
+                padding: 6rem 1rem 4rem; 
+                min-height: 80vh; 
+            }
+            .hero-content {
+                padding: 0 0.5rem;
+                max-width: 100%;
+                width: 100%;
+            }
+            .hero-content h1 {
+                font-size: clamp(1.75rem, 8vw, 2.25rem);
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                font-weight: 800;
+                text-align: center;
+                text-wrap: balance;
+                max-width: 100%;
+                word-wrap: break-word;
+            }
+            .hero-content p {
+                font-size: clamp(0.95rem, 4.5vw, 1.1rem);
+                margin-bottom: 2rem;
+                line-height: 1.5;
+                text-align: center;
+                text-wrap: balance;
+                padding: 0 0.5rem;
+                max-width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                gap: 0.75rem;
+                max-width: 100%;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 320px;
+                font-size: 15px;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                padding: 0.85rem 1.5rem;
+            }
             
             .experts-grid { grid-template-columns: 1fr; gap: 3rem; }
             .experts-img-sub { right: 10px; bottom: -20px; width: 50%; }
@@ -365,9 +406,9 @@
                         <span>▼</span>
                     </button>
                     <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
-                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫 Français</div>
+                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
                         <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
-                        <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
+                        <div class="lang-option" data-lang="ar" role="menuitem">🇲 العربية</div>
                     </div>
                 </div>
 
