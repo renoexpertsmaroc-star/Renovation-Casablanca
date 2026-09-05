@@ -56,7 +56,6 @@
         body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: var(--light); color: var(--dark); overscroll-behavior-y: none; line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
-        /* HEADER & LOGO TEXTO */
         .header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
         .header-container { display: flex; justify-content: space-between; align-items: center; height: 80px; gap: 1rem; }
         .logo-text { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
@@ -98,7 +97,6 @@
         .btn-primary { background: var(--secondary); color: white; }
         .btn-large { padding: 1rem 2rem; font-size: 1.05rem; margin-top: 1.5rem; width: 100%; justify-content: center; }
         
-        /* HERO */
         .hero { 
             background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.5)), url('https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Entreprise-de-Renovation-a-Maroc.webp');
             background-size: cover; background-position: center; background-repeat: no-repeat;
@@ -111,7 +109,6 @@
         .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
         .hero-buttons .btn { flex: 0 1 auto; min-width: 200px; font-size: 16px; }
 
-        /* SECCION EXPERTS */
         .experts-section { padding: 5rem 0; background: white; }
         .experts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
         .experts-images { position: relative; }
@@ -123,7 +120,6 @@
         .experts-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; color: var(--dark); font-weight: 500; font-size: 1.05rem; }
         .experts-list li::before { content: '✅'; font-size: 1.2rem; }
 
-        /* SERVICIOS */
         .services-section { padding: 4rem 0; scroll-margin-top: 100px; }
         .section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--primary); margin-bottom: 2.5rem; text-align: center; position: relative; padding-bottom: 1rem; }
         .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--secondary); border-radius: 2px; }
@@ -149,7 +145,6 @@
         .review-author { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
         .review-city { color: var(--gray); font-size: 0.85rem; }
 
-        /* CTA SECTION */
         .cta-section { padding: 5rem 0; }
         .cta-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: start; }
         .cta-title { font-size: clamp(1.6rem, 3vw, 2.3rem); color: var(--dark); text-align: center; margin-bottom: 1rem; line-height: 1.3; font-weight: 800; }
@@ -161,7 +156,6 @@
         .cta-card { background: #262626; border-radius: 14px; padding: 2.25rem; box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
         .cta-card h3 { color: white; font-size: 1.45rem; margin-bottom: 1.75rem; font-weight: 700; line-height: 1.3; }
 
-        /* POURQUOI NOUS CHOISIR */
         .why-us-section { padding: 5rem 0; background: var(--light); text-align: center; }
         .why-us-subtitle { color: var(--gray); font-size: 1.1rem; margin-bottom: 3rem; }
         .why-us-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
@@ -171,7 +165,6 @@
         .why-us-card h4 { color: var(--dark); font-size: 1.15rem; margin-bottom: 1rem; }
         .why-us-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.5; }
 
-        /* FOOTER */
         .footer { background: var(--footer-bg); color: var(--footer-text); padding: 4rem 0 0; margin-top: 0; scroll-margin-top: 100px; }
         .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; }
         .footer-brand .footer-logo-text { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 1rem; display: block; }
@@ -191,7 +184,6 @@
         .footer-legal-links button { background: none; border: none; color: var(--footer-text); cursor: pointer; font-size: 0.88rem; padding: 0.25rem; transition: color 0.2s; }
         .footer-legal-links button:hover { color: white; }
 
-        /* MODALS */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; overflow-y: auto; padding: 2rem 1rem; backdrop-filter: blur(4px); }
         .modal.active { display: flex; align-items: center; justify-content: center; animation: fadeIn 0.2s ease; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -214,7 +206,6 @@
         .legal-text { line-height: 1.7; color: var(--gray); margin-top: 1rem; }
         .legal-text p { margin-bottom: 1rem; }
 
-        /* CHAT WIDGET */
         .chat-widget { position: fixed; bottom: 2rem; right: 2rem; z-index: 1500; }
         .chat-toggle { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; border: none; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.2s; display: flex; align-items: center; justify-content: center; position: relative; }
         .chat-toggle:hover { transform: scale(1.1); }
@@ -244,14 +235,12 @@
         .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
         @keyframes typing { 0%, 60%, 100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-6px); opacity: 1; } }
 
-        /* TOASTS & BANNERS */
         .toast { position: fixed; top: 100px; left: 50%; transform: translateX(-50%) translateY(-20px); background: var(--success); color: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 3000; opacity: 0; transition: all 0.3s ease; pointer-events: none; font-weight: 600; }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
         .toast.error { background: var(--danger); }
         .offline-banner { display: none; position: fixed; top: 80px; left: 0; right: 0; background: var(--danger); color: white; padding: 0.5rem 1rem; text-align: center; z-index: 999; font-size: 0.9rem; }
         .offline-banner.show { display: block; }
         
-        /* PWA INSTALL BANNER */
         .pwa-banner { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--primary); color: white; padding: 1rem; z-index: 2500; box-shadow: 0 -4px 10px rgba(0,0,0,0.2); align-items: center; justify-content: space-between; gap: 1rem; }
         .pwa-banner.show { display: flex; animation: slideUp 0.3s ease; }
         .pwa-banner-text { font-weight: 600; font-size: 0.95rem; }
@@ -263,7 +252,6 @@
         .menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; opacity: 0; transition: opacity 0.3s ease; }
         .menu-overlay.active { display: block; opacity: 1; }
 
-        /* RESPONSIVE */
         @media (max-width: 968px) {
             .mobile-menu-btn { display: block; }
             .header-actions { display: none; }
@@ -271,7 +259,6 @@
             .nav-menu { position: fixed; top: 0; right: -100%; width: 85%; max-width: 360px; height: 100vh; background: white; flex-direction: column; padding: 0; transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; align-items: stretch; z-index: 1100; gap: 0; box-shadow: -4px 0 20px rgba(0,0,0,0.15); }
             .nav-menu.active { right: 0; }
             
-            /* REORDENAMIENTO MENU MOVIL: IDIOMAS ARRIBA */
             .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: var(--light); order: 1; }
             .mobile-lang-selector { display: block; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: white; order: 2; }
             .mobile-lang-selector .lang-btn { width: 100%; justify-content: space-between; }
@@ -280,7 +267,6 @@
             .mobile-menu-body { padding: 0.5rem 0; flex: 1; order: 3; }
             .nav-links { flex-direction: column; width: 100%; gap: 0; align-items: stretch; }
             .nav-item { width: 100%; border-bottom: 1px solid #f1f5f9; }
-            /* TEXTO MENU MOVIL AUMENTADO */
             .nav-anchor { width: 100%; justify-content: space-between; padding: 1rem 1.5rem; font-size: 1.1rem; }
             .nav-anchor::after { display: none; }
             .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; border-radius: 0; max-height: 0; overflow: hidden; padding: 0; transition: max-height 0.35s ease; background: #f8fafc; min-width: auto; }
@@ -291,10 +277,9 @@
             .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; background: var(--light); order: 4; }
             .mobile-menu-actions .btn { width: 100%; justify-content: center; padding: 0.9rem 1.3rem; }
             
-            /* HERO OPTIMIZADO PARA MOVIL */
             .hero { 
-                padding: 6rem 1rem 4rem; 
-                min-height: 80vh; 
+                padding: 5rem 1rem 3.5rem; 
+                min-height: 75vh; 
             }
             .hero-content {
                 padding: 0 0.5rem;
@@ -302,9 +287,9 @@
                 width: 100%;
             }
             .hero-content h1 {
-                font-size: clamp(1.75rem, 8vw, 2.25rem);
+                font-size: clamp(1.4rem, 6.5vw, 1.9rem);
                 margin-bottom: 1rem;
-                line-height: 1.2;
+                line-height: 1.25;
                 font-weight: 800;
                 text-align: center;
                 text-wrap: balance;
@@ -312,8 +297,8 @@
                 word-wrap: break-word;
             }
             .hero-content p {
-                font-size: clamp(0.95rem, 4.5vw, 1.1rem);
-                margin-bottom: 2rem;
+                font-size: clamp(0.9rem, 4vw, 1.05rem);
+                margin-bottom: 1.75rem;
                 line-height: 1.5;
                 text-align: center;
                 text-wrap: balance;
@@ -350,10 +335,7 @@
             .modal-info { padding: 1.5rem; }
             .services-grid { grid-template-columns: 1fr; }
             
-            /* TITULOS SERVICIOS MOVIL AUMENTADOS */
             .service-card h3 { font-size: 1.4rem; font-weight: 800; }
-
-            /* PESO DE TITULOS DE SECCION EN MOVIL */
             .section-title, .experts-content h2, .cta-title, .why-us-section .section-title { font-weight: 800; }
 
             .footer-main { grid-template-columns: 1fr; gap: 2rem; }
@@ -379,7 +361,6 @@
     <div class="offline-banner" id="offlineBanner" data-i18n="offline_banner">Vous êtes hors ligne.</div>
     <div class="menu-overlay" id="menuOverlay" onclick="closeMobileMenu()"></div>
 
-    <!-- PWA INSTALL BANNER -->
     <div class="pwa-banner" id="pwaBanner">
         <span class="pwa-banner-text" data-i18n="pwa_text">📱 Installez notre application pour un accès rapide !</span>
         <div class="pwa-banner-actions">
@@ -398,7 +379,6 @@
                     <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Fermer">✕</button>
                 </div>
                 
-                <!-- IDIOMAS MOVIDO ARRIBA EN MOVIL -->
                 <div class="mobile-lang-selector">
                     <button class="lang-btn" id="mobileLangBtn" aria-haspopup="true" aria-expanded="false">
                         <span id="mobileCurrentFlag">🇫</span>
@@ -478,7 +458,6 @@
         </div>
     </section>
 
-    <!-- SECCION 1: LES EXPERTS -->
     <section class="experts-section">
         <div class="container experts-grid">
             <div class="experts-images">
@@ -587,14 +566,12 @@
             </div>
             <div class="cta-card">
                 <h3 data-i18n="cta_form_title">Demandez votre devis dès aujourd'hui !</h3>
-                <!-- FORMULARIO WHATSAPP ACTUALIZADO -->
                 <script defer data-active data-widget-type="group" data-person="4b4f47a2-6e08-4741-afd7-79abc041b33c" src="https://wa.seo-local.click/install-widget/bundle.js?key=0ad681c8-23ce-4b35-a20e-0d354f967429"></script>
                 <div data-active id="whatapp-people-widget-4b4f47a2-6e08-4741-afd7-79abc041b33c"></div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER CON ID CONTACT -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-main">
@@ -631,7 +608,6 @@
         </div>
     </footer>
 
-    <!-- MODALS -->
     <div id="serviceModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()" aria-label="Fermer">&times;</button>
@@ -657,7 +633,6 @@
         </div>
     </div>
 
-    <!-- CHAT WIDGET -->
     <div class="chat-widget" id="chatWidget">
         <button class="chat-toggle" id="chatToggle" aria-label="Ouvrir le chat" aria-expanded="false">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
@@ -680,7 +655,6 @@
     <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
 
     <script>
-    // --- TRADUCCIONES ---
     const content = {
         fr: {
             nav_int: "Rénovation Intérieure", nav_autres: "Autres Services", nav_contact: "Contact",
@@ -846,7 +820,6 @@
         }
     };
 
-    // --- DESCRIPCIONES DE SERVICIOS ---
     const serviceDesc = {
         fr: {
             maconnerie: "Travaux de Maçonnerie Générale à Casablanca. Construction et rénovation : murs et cloisons, création d'extensions, pose de dallage et chapes, réparations structurelles. Maçons qualifiés, assurés et expérimentés. Travail soigné, respect des délais et matériaux de qualité supérieure. Intervention rapide et soignée à Casablanca et dans ses environs.",
@@ -916,7 +889,6 @@
         renderDynamicMenus(); renderServices(); renderFooterLists(); renderReviews();
     }
 
-    // --- DATOS DE SERVICIOS ---
     const servicesData = [
         { 
             id: "maconnerie", category: "interieure", 
@@ -1155,7 +1127,6 @@
         });
     }
 
-    // --- CHAT LOGIC ---
     let chatStep = 'welcome';
     let chatData = { name: '', email: '', phone: '', service: '', city: '', scope: '' };
     let chatInitialized = false;
@@ -1251,7 +1222,6 @@
         } else if (chatStep === 'ask_service') {
             chatStep = 'ask_city';
             addMessage(t('chat_ask_city'), 'bot');
-            // BARRIOS DE CASABLANCA
             setTimeout(() => showChatButtons([
                 { label: "Maarif / المعاريف", value: 'maarif' },
                 { label: "Gauthier / غوتييه", value: 'gauthier' },
@@ -1325,7 +1295,6 @@
         }
     });
 
-    // --- MODALS ---
     let lastFocusedElement = null;
     function openServiceModal(serviceId) {
         const service = servicesData.find(s => s.id === serviceId);
@@ -1388,7 +1357,6 @@
         }
     });
 
-    // --- MOBILE MENU ---
     function toggleMobileDropdown(event, element) {
         if (window.innerWidth <= 968) {
             event.preventDefault();
@@ -1412,7 +1380,6 @@
         document.querySelectorAll('.nav-item.open').forEach(item => item.classList.remove('open'));
     }
 
-    // --- LANG SELECTOR ---
     function setLang(lang) {
         const flagMap = { fr: '🇫🇷', es: '🇪🇸', ar: '🇲🇦' };
         const flag = flagMap[lang] || '🇫🇷';
@@ -1438,7 +1405,6 @@
         });
     });
 
-    // --- UTILS ---
     function showToast(message, type = 'success') {
         const toast = document.getElementById('toast');
         toast.textContent = message;
@@ -1452,7 +1418,6 @@
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
 
-    // --- PWA & SERVICE WORKER ---
     let deferredPrompt;
     const pwaBanner = document.getElementById('pwaBanner');
     const pwaInstallBtn = document.getElementById('pwaInstallBtn');
@@ -1490,7 +1455,7 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swCode = `
-            const CACHE_NAME = 'reno-casa-v32';
+            const CACHE_NAME = 'reno-casa-v33';
             self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
             self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
             self.addEventListener('fetch', e => {
@@ -1501,7 +1466,6 @@
         navigator.serviceWorker.register(URL.createObjectURL(new Blob([swCode], { type: 'application/javascript' }))).catch(console.log);
     }
 
-    // --- INIT ---
     document.addEventListener('DOMContentLoaded', () => {
         const savedLang = localStorage.getItem('reno_lang');
         if (savedLang && content[savedLang]) setLang(savedLang);
